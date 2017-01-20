@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bj_photo" >
+
+    <com.dq.handdraw.photoview.PhotoView
+        android:id="@+id/photoview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/lin"
+        android:layout_centerInParent="true" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:layout_above="@+id/lin"
+        android:background="@android:color/black" />
+
+    <LinearLayout
+        android:id="@+id/lin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:background="#2f000000"
+        android:padding="10dp" >
+
+        <RadioGroup
+            android:id="@+id/photo_color_gourp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/photo_rbtn1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/setting_color_1"
+                android:textColor="@android:color/white" />
+
+            <RadioButton
+                android:id="@+id/photo_rbtn2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="@string/setting_color_2"
+                android:textColor="@android:color/white" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/yuzhi1"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
+            <SeekBar
+                android:id="@+id/seekBar1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:focusable="true"
+                android:max="50"
+                android:maxHeight="2dp"
+                android:minHeight="2dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:progressDrawable="@drawable/po_seekbar"
+                android:thumb="@drawable/seekbar_thumb" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/yuzhi2"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
+            <SeekBar
+                android:id="@+id/seekBar2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:focusable="true"
+                android:max="50"
+                android:maxHeight="2dp"
+                android:minHeight="2dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:progressDrawable="@drawable/po_seekbar"
+                android:thumb="@drawable/seekbar_thumb" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/yuzhi3"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
+            <SeekBar
+                android:id="@+id/seekBar3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:focusable="true"
+                android:max="50"
+                android:maxHeight="2dp"
+                android:minHeight="2dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:progressDrawable="@drawable/po_seekbar"
+                android:thumb="@drawable/seekbar_thumb" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
